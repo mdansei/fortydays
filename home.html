@@ -1,0 +1,31 @@
+<html>
+ <head>
+ 	
+ </head>
+ <body>
+   <div> 
+         <div className="">
+           <img alt="Forty Dayes Logo" src=""} />
+           <ul>  
+             <li title=""><NavLink to="/">Home</NavLink></li>
+             <li title=""><NavLink to="/training">Training</NavLink></li>
+             <li title=""><NavLink to="/profile">Profile</NavLink></li>
+             <li title=""><NavLink to="/handoff">Hand Off</NavLink></li>
+             <li title=""><NavLink to="/signin">Sign In</NavLink></li>
+             <li title=""><NavLink to="/singup">Sign Up</NavLink></li>
+           </ul>
+         </div>
+
+         <div className ="">
+             <Route path="/" component={Main}/>
+             <Route path="/training" component={Training}/>
+             <Route path="/profile" component={Profile}/>
+             <Route path="/handoff" component={Handoff}/>
+             <Route path="/signin" component={SignIn}/>
+             <Route path="/singup" component={SignUp}/>
+         </div>
+
+       </div>
+
+ </body>
+</html>

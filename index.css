@@ -1,0 +1,48 @@
+
+html,body{
+	width:100%;
+ background-attachment:fixed;
+background-repeat: no-repeat;
+ background-color: white;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+.content{
+	width:100%;
+	display: table;
+	height: 100%;
+	margin: 2% 2% 2% 2%;
+    padding: 1% 0px;
+    position: absolute;
+}
+
+
+
+.leftBox  {
+	padding: 2%;
+
+    border: 0.3em solid #eee;
+     width: 20%;
+    height:auto;
+     display: table-cell;
+
+}
+
+
+
+.leftBox li{
+	display: block;
+	margin: 2% 4% 2% 4%;
+	padding:  2% 4% 2% 4%;
+}
+
+.rightBox{
+
+    border: 0.3em solid #eee;
+    width: 60%;
+    display: table-cell;
+    padding: 2%;
+}
