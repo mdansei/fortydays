@@ -63408,7 +63408,7 @@ var SignIn = function (_Component) {
                     ),
                     _react2.default.createElement(
                         _Button2.default,
-                        { style: { margin: 10 }, variant: 'contained', color: 'secondary', className: classes.button },
+                        { style: { margin: 10 }, variant: 'contained', color: 'primary', className: classes.button },
                         'Sign in'
                     )
                 )
