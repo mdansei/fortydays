@@ -5,12 +5,12 @@ import {
   Switch
 } from "react-router-dom";
 
-import Training from "./Training";
-import Profile from "./Profile";
-import Handoff from "./Handoff";
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
- import Home from "./Home";
+import Training from "./Pages/Training";
+import Profile from "./Pages/Profile";
+import Handoff from "./Pages/Handoff";
+import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
+ import Home from "./Pages/Home";
 const Main = () => (
   <main>
      <Switch>
