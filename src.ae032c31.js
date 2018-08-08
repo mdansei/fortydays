@@ -63141,7 +63141,7 @@ var Profile = function (_Component) {
                         _react2.default.createElement(
                             'h3',
                             null,
-                            'Name : latifah abdulhafiz'
+                            'Name : Amal'
                         ),
                         _react2.default.createElement(
                             'h3',
@@ -63166,12 +63166,12 @@ var Profile = function (_Component) {
                         _react2.default.createElement(
                             'h3',
                             null,
-                            'Email : ksa123a21@gmail.com'
+                            'Email : xxxxxxx@gmail.com'
                         ),
                         _react2.default.createElement(
                             'h3',
                             null,
-                            'phone number : 0566549985'
+                            'phone number : 055555555'
                         )
                     )
                 )
@@ -63291,7 +63291,7 @@ exports.default = Handoff;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -63335,73 +63335,73 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var SignIn = function (_Component) {
-  _inherits(SignIn, _Component);
+    _inherits(SignIn, _Component);
 
-  function SignIn() {
-    _classCallCheck(this, SignIn);
+    function SignIn() {
+        _classCallCheck(this, SignIn);
 
-    return _possibleConstructorReturn(this, (SignIn.__proto__ || Object.getPrototypeOf(SignIn)).apply(this, arguments));
-  }
-
-  _createClass(SignIn, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          _Grid2.default,
-          { container: true,
-            direction: 'column',
-            justify: 'center',
-            spacing: 40,
-            alignItems: 'center' },
-          _react2.default.createElement(_Grid2.default, { item: true }),
-          _react2.default.createElement('img', { style: { width: 100 }, src: 'https://i.imgur.com/7NQmgxz.png' }),
-          _react2.default.createElement(
-            _Grid2.default,
-            { item: true },
-            _react2.default.createElement(_TextField2.default, { placeholder: 'username' })
-          ),
-          _react2.default.createElement(
-            _Grid2.default,
-            { item: true },
-            _react2.default.createElement(_TextField2.default, { placeholder: 'password', type: 'password' })
-          ),
-          _react2.default.createElement(
-            _FormGroup2.default,
-            { row: true },
-            _react2.default.createElement(_FormControlLabel2.default, {
-              control: _react2.default.createElement(_Checkbox2.default, {
-                value: 'checkedA'
-              }),
-              label: 'forget password'
-            }),
-            _react2.default.createElement(_FormControlLabel2.default, {
-              control: _react2.default.createElement(_Checkbox2.default, {
-
-                value: 'checkedB',
-                color: 'primary'
-              }),
-              label: 'remember me'
-            })
-          ),
-          _react2.default.createElement(
-            _reactRouterDom.Link,
-            { to: '/signup' },
-            'Not a member? Sign up'
-          ),
-          _react2.default.createElement(
-            _Button2.default,
-            { style: { margin: 10 }, ariant: 'contained', color: 'secondary' },
-            'Sign in'
-          )
-        )
-      );
+        return _possibleConstructorReturn(this, (SignIn.__proto__ || Object.getPrototypeOf(SignIn)).apply(this, arguments));
     }
-  }]);
 
-  return SignIn;
+    _createClass(SignIn, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    _Grid2.default,
+                    { container: true,
+                        direction: 'column',
+                        justify: 'center',
+                        spacing: 40,
+                        alignItems: 'center' },
+                    _react2.default.createElement(_Grid2.default, { item: true }),
+                    _react2.default.createElement('img', { style: { width: 100 }, src: 'https://i.imgur.com/7NQmgxz.png' }),
+                    _react2.default.createElement(
+                        _Grid2.default,
+                        { item: true },
+                        _react2.default.createElement(_TextField2.default, { placeholder: 'username' })
+                    ),
+                    _react2.default.createElement(
+                        _Grid2.default,
+                        { item: true },
+                        _react2.default.createElement(_TextField2.default, { placeholder: 'password', type: 'password' })
+                    ),
+                    _react2.default.createElement(
+                        _FormGroup2.default,
+                        { row: true },
+                        _react2.default.createElement(_FormControlLabel2.default, {
+                            control: _react2.default.createElement(_Checkbox2.default, {
+                                value: 'checkedA'
+                            }),
+                            label: 'forget password'
+                        }),
+                        _react2.default.createElement(_FormControlLabel2.default, {
+                            control: _react2.default.createElement(_Checkbox2.default, {
+
+                                value: 'checkedB',
+                                color: 'primary'
+                            }),
+                            label: 'remember me'
+                        })
+                    ),
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/signup' },
+                        'Not a member? Sign up'
+                    ),
+                    _react2.default.createElement(
+                        _Button2.default,
+                        { style: { margin: 10 }, variant: 'contained', color: 'secondary' },
+                        'Sign in'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return SignIn;
 }(_react.Component);
 
 exports.default = SignIn;
@@ -63486,6 +63486,11 @@ var Signup = function (_Component) {
                         _Grid2.default,
                         { item: true },
                         _react2.default.createElement(_TextField2.default, { placeholder: 'password', type: 'password' })
+                    ),
+                    _react2.default.createElement(
+                        _Grid2.default,
+                        { item: true },
+                        _react2.default.createElement(_TextField2.default, { placeholder: 'confirm password', type: 'password' })
                     ),
                     _react2.default.createElement(
                         _FormGroup2.default,
@@ -66305,7 +66310,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59744' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63712' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

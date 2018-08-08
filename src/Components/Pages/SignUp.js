@@ -20,6 +20,7 @@ class Signup extends Component {
                     <Grid item ><img style={{width: 100}} src="https://i.imgur.com/7NQmgxz.png"/></Grid>
                     <Grid item ><TextField  placeholder="username"/></Grid>
                     <Grid item ><TextField  placeholder="password" type="password"/></Grid>
+                    <Grid item ><TextField  placeholder="confirm password" type="password"/></Grid>
 
                     <FormGroup row>
                         <FormControlLabel

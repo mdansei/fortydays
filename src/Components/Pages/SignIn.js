@@ -46,7 +46,7 @@ class SignIn extends Component {
 
                     <Link to="/signup">Not a member? Sign up</Link>
 
-                    <Button style={{margin: 10}} variant="contained" color="secondary">Sign up</Button>
+                    <Button style={{margin: 10}} variant="contained" color="secondary">Sign in</Button>
 
 
                 </Grid>
