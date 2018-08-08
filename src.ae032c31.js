@@ -63324,6 +63324,8 @@ var _Button = require('@material-ui/core/Button');
 
 var _Button2 = _interopRequireDefault(_Button);
 
+var _styles = require('@material-ui/core/styles');
+
 var _reactRouterDom = require('react-router-dom');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -63333,6 +63335,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var styles = function styles(theme) {
+    return {
+        button: {
+            backgroundColor: "green"
+        }
+    };
+};
 
 var SignIn = function (_Component) {
     _inherits(SignIn, _Component);
@@ -63346,6 +63356,8 @@ var SignIn = function (_Component) {
     _createClass(SignIn, [{
         key: 'render',
         value: function render() {
+            var classes = this.props.classes;
+
             return _react2.default.createElement(
                 'div',
                 null,
@@ -63356,8 +63368,11 @@ var SignIn = function (_Component) {
                         justify: 'center',
                         spacing: 40,
                         alignItems: 'center' },
-                    _react2.default.createElement(_Grid2.default, { item: true }),
-                    _react2.default.createElement('img', { style: { width: 100 }, src: 'https://i.imgur.com/7NQmgxz.png' }),
+                    _react2.default.createElement(
+                        _Grid2.default,
+                        { item: true },
+                        _react2.default.createElement('img', { style: { width: 100 }, src: 'https://i.imgur.com/7NQmgxz.png' })
+                    ),
                     _react2.default.createElement(
                         _Grid2.default,
                         { item: true },
@@ -63393,7 +63408,7 @@ var SignIn = function (_Component) {
                     ),
                     _react2.default.createElement(
                         _Button2.default,
-                        { style: { margin: 10 }, variant: 'contained', color: 'secondary' },
+                        { style: { margin: 10 }, variant: 'contained', color: 'secondary', className: classes.button },
                         'Sign in'
                     )
                 )
@@ -63404,8 +63419,8 @@ var SignIn = function (_Component) {
     return SignIn;
 }(_react.Component);
 
-exports.default = SignIn;
-},{"react":"..\\node_modules\\react\\index.js","@material-ui/core/Grid":"..\\node_modules\\@material-ui\\core\\Grid\\index.js","@material-ui/core/TextField":"..\\node_modules\\@material-ui\\core\\TextField\\index.js","@material-ui/core/Checkbox":"..\\node_modules\\@material-ui\\core\\Checkbox\\index.js","@material-ui/core/FormControlLabel":"..\\node_modules\\@material-ui\\core\\FormControlLabel\\index.js","@material-ui/core/FormGroup":"..\\node_modules\\@material-ui\\core\\FormGroup\\index.js","@material-ui/core/Button":"..\\node_modules\\@material-ui\\core\\Button\\index.js","react-router-dom":"..\\node_modules\\react-router-dom\\es\\index.js"}],"..\\src\\Components\\Pages\\SignUp.js":[function(require,module,exports) {
+exports.default = (0, _styles.withStyles)(styles)(SignIn);
+},{"react":"..\\node_modules\\react\\index.js","@material-ui/core/Grid":"..\\node_modules\\@material-ui\\core\\Grid\\index.js","@material-ui/core/TextField":"..\\node_modules\\@material-ui\\core\\TextField\\index.js","@material-ui/core/Checkbox":"..\\node_modules\\@material-ui\\core\\Checkbox\\index.js","@material-ui/core/FormControlLabel":"..\\node_modules\\@material-ui\\core\\FormControlLabel\\index.js","@material-ui/core/FormGroup":"..\\node_modules\\@material-ui\\core\\FormGroup\\index.js","@material-ui/core/Button":"..\\node_modules\\@material-ui\\core\\Button\\index.js","@material-ui/core/styles":"..\\node_modules\\@material-ui\\core\\styles\\index.js","react-router-dom":"..\\node_modules\\react-router-dom\\es\\index.js"}],"..\\src\\Components\\Pages\\SignUp.js":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -63425,18 +63440,6 @@ var _Grid2 = _interopRequireDefault(_Grid);
 var _TextField = require('@material-ui/core/TextField');
 
 var _TextField2 = _interopRequireDefault(_TextField);
-
-var _Checkbox = require('@material-ui/core/Checkbox');
-
-var _Checkbox2 = _interopRequireDefault(_Checkbox);
-
-var _FormControlLabel = require('@material-ui/core/FormControlLabel');
-
-var _FormControlLabel2 = _interopRequireDefault(_FormControlLabel);
-
-var _FormGroup = require('@material-ui/core/FormGroup');
-
-var _FormGroup2 = _interopRequireDefault(_FormGroup);
 
 var _Button = require('@material-ui/core/Button');
 
@@ -63493,24 +63496,6 @@ var Signup = function (_Component) {
                         _react2.default.createElement(_TextField2.default, { placeholder: 'confirm password', type: 'password' })
                     ),
                     _react2.default.createElement(
-                        _FormGroup2.default,
-                        { row: true },
-                        _react2.default.createElement(_FormControlLabel2.default, {
-                            control: _react2.default.createElement(_Checkbox2.default, {
-                                value: 'checkedA'
-                            }),
-                            label: 'forget password'
-                        }),
-                        _react2.default.createElement(_FormControlLabel2.default, {
-                            control: _react2.default.createElement(_Checkbox2.default, {
-
-                                value: 'checkedB',
-                                color: 'primary'
-                            }),
-                            label: 'remember me'
-                        })
-                    ),
-                    _react2.default.createElement(
                         _Button2.default,
                         { variant: 'contained', color: 'secondary' },
                         'Sign up'
@@ -63524,7 +63509,7 @@ var Signup = function (_Component) {
 }(_react.Component);
 
 exports.default = Signup;
-},{"react":"..\\node_modules\\react\\index.js","@material-ui/core/Grid":"..\\node_modules\\@material-ui\\core\\Grid\\index.js","@material-ui/core/TextField":"..\\node_modules\\@material-ui\\core\\TextField\\index.js","@material-ui/core/Checkbox":"..\\node_modules\\@material-ui\\core\\Checkbox\\index.js","@material-ui/core/FormControlLabel":"..\\node_modules\\@material-ui\\core\\FormControlLabel\\index.js","@material-ui/core/FormGroup":"..\\node_modules\\@material-ui\\core\\FormGroup\\index.js","@material-ui/core/Button":"..\\node_modules\\@material-ui\\core\\Button\\index.js"}],"..\\node_modules\\@material-ui\\core\\es\\styles\\jssPreset.js":[function(require,module,exports) {
+},{"react":"..\\node_modules\\react\\index.js","@material-ui/core/Grid":"..\\node_modules\\@material-ui\\core\\Grid\\index.js","@material-ui/core/TextField":"..\\node_modules\\@material-ui\\core\\TextField\\index.js","@material-ui/core/Button":"..\\node_modules\\@material-ui\\core\\Button\\index.js"}],"..\\node_modules\\@material-ui\\core\\es\\styles\\jssPreset.js":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -66041,7 +66026,7 @@ var PermanentDrawer = function (_React$Component) {
                         ),
                         _react2.default.createElement(
                             _core.ListItem,
-                            { button: true, component: _reactRouterDom.NavLink, to: '/singup' },
+                            { button: true, component: _reactRouterDom.NavLink, to: '/signup' },
                             _react2.default.createElement(_core.ListItemText, { primary: 'Sign Up' })
                         ),
                         _react2.default.createElement(_Divider2.default, null),
@@ -66183,7 +66168,7 @@ var Main = function Main() {
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/profile", component: _Profile2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/handoff", component: _Handoff2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: "/signin", component: _SignIn2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: "/singup", component: _SignUp2.default })
+                    _react2.default.createElement(_reactRouterDom.Route, { path: "/signup", component: _SignUp2.default })
                 )
             )
         )
@@ -66310,7 +66295,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63712' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49795' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

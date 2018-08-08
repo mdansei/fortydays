@@ -69,7 +69,7 @@ class PermanentDrawer extends React.Component {
                         <ListItem button component={NavLink} to="/profile"><ListItemText primary="Profile"/></ListItem>
                         <ListItem button component={NavLink} to="/handoff"><ListItemText primary="Hand Off"/></ListItem>
                         <ListItem button component={NavLink} to="/signin"><ListItemText primary="Sign In"/></ListItem>
-                        <ListItem button component={NavLink} to="/singup"><ListItemText primary="Sign Up"/></ListItem>
+                        <ListItem button component={NavLink} to="/signup"><ListItemText primary="Sign Up"/></ListItem>
                         <Divider/>
                         <div>
 
