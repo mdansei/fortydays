@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: DodgerBlue;
+}
+lacasa.a {
+    font-size: 150%;
+    color: Darkblue;
+    font-style:oblique;
+}
+.button {
+    background-color: #1E90FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Create two columns/boxes that floats next to each other */
+h3 {
+    color: LightSlateGray ;
+}
+h2{
+  color: Darkblue ;
+}
+nav {
+    float: left;
+    width: 15%;
+    height: 699px; /* only for demonstration, should be removed */
+    background: #84CCE6;
+    padding: 20px;
+}
+div {right: 20px;
+
+position: absolute;
+
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 1250px;
+    height: 699px;
+    border: 2px  solid DodgerBlue   ;
+    padding: 25px;
+
+}
+div2 {right: 20px;
+
+position: absolute;
+
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 125px;
+    height: 69px;
+    border: 2px  solid DodgerBlue   ;
+    padding: 25px;
+
+}
+img {border-radius: 20%;
+  }
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #3E95B5;
+    padding: 0.02px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+
+
+
+
+<section>
+  <nav>
+    <ul>
+
+<lacasa class="a">Forty Days</lacasa>
+
+    <a href="#" class="button">   Home  </a>
+
+    <a href="#" class="button">Tranining</a>
+    <a href="#" class="button"> profile</a>
+    <a href="#" class="button">Hand off </a>
+    <a href="#" class="button">SING IN  </a>
+    <a href="#" class="button">SING UP  </a>
+
+
+
+    </ul>
+  </nav>
+<div>
+
+
+
+<p class="serif">
+  <h1>Assignment Title </h1>
+  <h3> Assignment Title : this paragraph describes the task that assigned to student or trainer can write any  comment he wants </h3>
+
+  <table>
+    <tr>
+      <th>The URL of answer</th>
+      <th>answer Title</th>
+
+    </tr>
+    <tr>
+      <td>https://mywebsite.com</td>
+      <td>website Assignment</td>
+    </tr>
+
+  </table>
+
+</section>
+</div>
+
+<footer>
+  <p>Forty Days</p>
+</footer>
+
+</body>
+</html>
