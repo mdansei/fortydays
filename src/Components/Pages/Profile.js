@@ -39,13 +39,13 @@ class Profile extends Component {
 
                 <Grid container direction="row" justify="left" alignItems="flex-start">
                     <Grid item xs={3}></Grid>
-                    <Grid direction="column" item xs={9}><h3>Name : latifah abdulhafiz</h3>
+                    <Grid direction="column" item xs={9}><h3>Name : Amal</h3>
                     <h3>Gender : female</h3>
                     <h3>Age : 23</h3>
                     <h3>Major : IT student</h3>
                     <h3>Organization : king University</h3>
-                    <h3>Email : ksa123a21@gmail.com</h3>
-                    <h3>phone number : 0566549985</h3></Grid>
+                    <h3>Email : xxxxxxx@gmail.com</h3>
+                    <h3>phone number : 055555555</h3></Grid>
                 </Grid>
 
             </div>
