@@ -18,8 +18,7 @@ class SignIn extends Component {
                       spacing={40}
                       alignItems="center">
 
-                    <Grid item></Grid>
-                    <img style={{width: 100}} src="https://i.imgur.com/7NQmgxz.png"/>
+                    <Grid item ><img style={{width: 100}} src="https://i.imgur.com/7NQmgxz.png"/></Grid>
                     <Grid item><TextField placeholder="username"/></Grid>
                     <Grid item><TextField placeholder="password" type="password"/></Grid>
 
