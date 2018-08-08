@@ -8,6 +8,6 @@ import "./index.css";
 render(
 	<BrowserRouter>
       <Main/> 
-     </BrowserRouter>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
