@@ -26,7 +26,7 @@ const Main = () => (
                     <Route path="/profile" component={Profile}/>
                     <Route path="/handoff" component={Handoff}/>
                     <Route path="/signin" component={SignIn}/>
-                    <Route path="/singup" component={SignUp}/>
+                    <Route path="/signup" component={SignUp}/>
                 </Switch>
             </div>
         </Drawer>
